@@ -1,0 +1,46 @@
+.row
+  .col-sm-12
+    .element-wrapper
+      .element-actions
+        form.form-inline.justify-content-sm-end
+          select.form-control.form-control-sm.rounded
+            option value="Pending" Today
+            option value="Active" Last Week 
+            option value="Cancelled" Last 30 Days
+      h6.element-header Sales Dashboard
+      .element-content
+        .row
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label Products Sold
+              .value 57
+              .trending.trending-up-basic
+                span 12%
+                i.os-icon.os-icon-arrow-up2
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label Gross Profit
+              .value $457
+              .trending.trending-down-basic
+                span 12%
+                i.os-icon.os-icon-arrow-down
+          .col-sm-4.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label New Customers
+              .value 125
+              .trending.trending-down-basic
+                span 9%
+                i.os-icon.os-icon-arrow-down
+          .d-none.d-xxxl-block.col-xxxl-3
+            a.element-box.el-tablo href="#"
+              .label Refunds Processed
+              .value $294
+              .trending.trending-up-basic
+                span 12%
+                i.os-icon.os-icon-arrow-up2
+
+  .col-sm-12
+    .element-wrapper
+      h6.element-header Recent Orders
+      .element-box-tp
+        include ../_partials/tables/_table_with_actions.slim
